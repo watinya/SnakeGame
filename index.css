@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'VT323', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.board{
+    background-color: rgb(175, 183, 190);
+    width: 80vmin;
+    height: 80vmin;
+}
+
+#game-board{
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake{
+    background-color: hsl(200, 100%, 50%);
+    border: 0.25vmin solid black;
+}
+
+.food{
+    background-color: hsl(50, 100%, 50%);
+    border: 0.25vmin solid black;
+    border-radius: 50%;
+}
+
+#start-board{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#title{
+    position: absolute;
+    font-size: 60px;
+    margin-top: -130px;
+}
+
+.wrapper-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.btn{
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    color: hsl(200, 43%, 53%);
+    cursor: pointer;
+    display:inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 25px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+#setting-board {
+    display: flex;
+    justify-content: center;
+}
+
+#backBtn{
+    align-self: flex-end;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gluttonous Snake</title>
+        
+        <link rel="stylesheet" href="index.css">
+        <script src="game.js" defer type="module"></script>
+        <script src="setting.js" defer type="module"></script>
+    </head>
+    <body>
+        <!-- start board -->
+        <div id="start-board" class="board">
+            <p id="title">Gluttonous Snake</p>
+            <div class="wrapper-div">
+                <button class="btn" id="startBtn">Start</button>
+                <button class="btn" id="settingBtn">Setting</button>
+            </div>
+        </div>
+
+        <!-- game board -->
+        <div id="game-board" class="board" style="display: none;">
+        </div>
+
+        <!-- setting board -->
+        <div id="setting-board" class="board" style="display: none;">
+            <span>wall: </span>
+            <button class="btn" id="backBtn">Back</button>
+        </div>
+    </body>
+</html>
