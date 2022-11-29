@@ -10,8 +10,7 @@ const startBoard = document.getElementById('start-board')
 function main(currentTime) {
     if (gameOver) {
         if(confirm('You lost!! Press ok to restart')) {
-            startBoard.style.display = 'flex';
-            gameBoard.style.display = 'none';
+            window.location = '/'
         }
         return
     }
